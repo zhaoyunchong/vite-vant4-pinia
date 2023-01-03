@@ -11,7 +11,7 @@
         src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
       />
     </div>
-    <h1>路由跳转:</h1>
+    <h1 class="less-test">路由跳转:</h1>
     <router-link to="/about">跳转到about页面</router-link>
     <h1>pinia状态： {{ countStore.count }}</h1>
     <h1>pinia=> getters： {{ countStore.doubleCount }}</h1>
@@ -41,4 +41,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="less" scoped>
+  .less-test {
+    color: red;
+  }
+</style>
