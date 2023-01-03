@@ -21,11 +21,14 @@
 
 <script>
 import { useCountStore } from "@/pinia/count.js";
+import { onMounted } from 'vue';
 
 export default {
   setup() {
     const countStore = useCountStore();
-
+    onMounted(() => {
+      console.log('test git')
+    })
     // 累加
     const doIncrease = () => {
       countStore.increment();
