@@ -27,7 +27,7 @@ export default {
   setup() {
     const countStore = useCountStore();
     onMounted(() => {
-      console.log('test git')
+      console.log('test git==')
     })
     // 累加
     const doIncrease = () => {
